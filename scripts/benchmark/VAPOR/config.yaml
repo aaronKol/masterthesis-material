@@ -1,0 +1,12 @@
+samples: ["SRR30027723", "..."]
+path_to_reads: "/home/galaxy/akolbecher/workdir/data/benchmark_samples_TEST/"
+# Reads have to be saved in the folder above like this:
+# {sample}/forward.fastqsanger.gz
+# {sample}/reverse.fastqsanger.gz
+
+path_to_refs: "/home/galaxy/akolbecher/workdir/data/vapor_ref_collection/Influenza_per-segment_reference_collection/"
+# Reference database has to be saved in the folder above this way:
+# {segments}.fasta (names of the segments have to match the fasta names
+
+segments: ["1-PB2", "2-PB1", "3-PA", "4-HA", "5-NP", "6-NA", "7-MP", "8-NS"]
+

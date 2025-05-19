@@ -1,0 +1,102 @@
+# Consensus distance TSV snakemake workflow
+# speicher struktur (von diesem snakefile aus):
+# irma/fasta_consensus/{sample}/{segment}.fasta 
+# vapor/fasta_consensus/{sample}/{segment}.fasta
+# for other comparisons, use find and replace to exchange "compare_TOOL1_TOOL2", and specify inputs in the "cat" rule.
+
+# USAGE:
+# 1. snakemake all
+# 2. snakemake summarize
+# 3. python3 batchSummarizer.py
+
+configfile: 'config.yaml'
+
+samples = config["samples"]
+segments = config["segments"]
+
+
+# 1. 
+rule all:
+    input:
+        expand("compare_vapor_vaporBugFixed/{sample}/MSA_{segment}.fa", sample = samples, segment = segments )
+        # aktuell arbeiten wir ohne snp_dists expand("compare_vapor_vaporClustRef/{sample}/dist_{segment}.tsv", sample = samples, segment = segments )
+
+
+# creating empty fastas for missing segments. Their missing will be detected in sampleSummarizer.py, since only 0 or 1 sequence is present in the mafft file
+rule createMissingVapor:
+    output:
+        "vapor/fasta_consensus/{sample}/{segment}.fasta"
+    shell:
+        "touch {output}"
+        
+rule createMissingVaporCLREF:
+    output:
+        "vapor_bugFixed_rerun/fasta_consensus/{sample}/{segment}.fasta"
+    shell:
+        "touch {output}"
+
+#cat irma/fasta_consensus/{sample}/IRMANAME{segment}.fasta vapor/fasta_consensus/{sample}/{segment}.fasta > compare_vapor_vaporClustRef/{sample}/{segment}_vapor_irma.fa
+rule cat:
+    input: #change to your desired inputs. 
+        tool1="vapor/fasta_consensus/{sample}/{segment}.fasta",
+        tool2="vapor_bugFixed_rerun/fasta_consensus/{sample}/{segment}.fasta"
+    output:
+        "compare_vapor_vaporBugFixed/{sample}/{segment}_vapor_irma.fa"
+    shell:
+        "cat {input.tool1} {input.tool2} > {output}"
+
+
+#mafft compare_vapor_vaporClustRef/{sample}/{segment}_vapor_irma.fa > compare_vapor_vaporClustRef/{sample}/MSA_{segment}.fa
+rule mafft:
+    input:
+        "compare_vapor_vaporBugFixed/{sample}/{segment}_vapor_irma.fa"
+    output:
+        "compare_vapor_vaporBugFixed/{sample}/MSA_{segment}.fa"
+    shell:
+        "linsi {input} > {output}"
+
+##########
+
+
+# second snakemake "all"-rule needed, since going from segment level to sample level now:
+rule summarize:
+    input:
+        expand("compare_vapor_vaporBugFixed/{sample}/SampleSummary.tsv", sample = samples)
+
+#python3 sampleSummarizer.py compare_vapor_vaporClustRef/{sample}/dist_*.tsv
+rule sampleSummarizer:
+    input:
+        "compare_vapor_vaporBugFixed/{sample}"
+    output:
+        "compare_vapor_vaporBugFixed/{sample}/SampleSummary.tsv"
+    conda:
+        "samtools"
+    shell:
+        "python3 sampleSummarizer.py {input}/MSA_*.fa"
+
+
+##########
+
+
+# nach snakemake selber ausführen:
+# python3 batchSummarizer.py -o batchSummaryVAPORbugFixed.tsv -t 7 --highDistsOut delete.tsv compare_vapor_vaporBugFixed/*/SampleSummary.tsv 
+
+
+##########
+
+
+# FOLLWOING IS NOT USED - could be an alternativ to own scoring metric.
+#snp-dists compare_vapor_vaporClustRef/{sample}/MSA_{segment}.fa > compare_vapor_vaporClustRef/{sample}/dist_{segment}.tsv
+rule snpDist:
+    input:
+        "compare_vapor_vaporBugFixed/{sample}/MSA_{segment}.fa"
+    output:
+        "compare_vapor_vaporBugFixed/{sample}/dist_{segment}.tsv"
+    shell:
+        """
+        if [ -s {input} ]; then
+            snp-dists {input} > {output}
+        else
+            touch {output}
+        fi  
+        """

@@ -1,0 +1,111 @@
+# vapor snakemake workflow
+
+configfile: 'config.yaml'
+
+samples = config["samples"]
+segments = config["segments"]
+
+path_to_reads = config["path_to_reads"]
+path_to_refs = config["path_to_refs"]
+
+rule vapor:
+    input:
+        fa=expand("{sample}/result_{sample}_{segment}.fa", sample = samples, segment = segments ),
+        txt=expand("{sample}/result_{sample}_{segment}.out", sample = samples, segment = segments )
+
+
+
+rule PB2:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "1-PB2.fasta"
+    output:
+        fa="{sample}/result_{sample}_1-PB2.fa",
+        txt="{sample}/result_{sample}_1-PB2.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_1-PB2 {wildcards.sample}/peakMemory2.txt"
+
+rule PB1:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "2-PB1.fasta",
+        mock        = "{sample}/result_{sample}_1-PB2.out"
+    output:
+        fa="{sample}/result_{sample}_2-PB1.fa",
+        txt="{sample}/result_{sample}_2-PB1.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_2-PB1 {wildcards.sample}/peakMemory2.txt"
+
+rule PA:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "3-PA.fasta",
+        mock        = "{sample}/result_{sample}_2-PB1.out"
+    output:
+        fa="{sample}/result_{sample}_3-PA.fa",
+        txt="{sample}/result_{sample}_3-PA.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_3-PA {wildcards.sample}/peakMemory2.txt"
+
+rule HA:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "4-HA.fasta",
+        mock        = "{sample}/result_{sample}_3-PA.out"
+    output:
+        fa="{sample}/result_{sample}_4-HA.fa",
+        txt="{sample}/result_{sample}_4-HA.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_4-HA {wildcards.sample}/peakMemory2.txt"
+
+rule NP:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "5-NP.fasta",
+        mock        = "{sample}/result_{sample}_4-HA.out"
+    output:
+        fa="{sample}/result_{sample}_5-NP.fa",
+        txt="{sample}/result_{sample}_5-NP.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_5-NP {wildcards.sample}/peakMemory2.txt"
+
+rule NA:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "6-NA.fasta",
+        mock        = "{sample}/result_{sample}_5-NP.out"
+    output:
+        fa="{sample}/result_{sample}_6-NA.fa",
+        txt="{sample}/result_{sample}_6-NA.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_6-NA {wildcards.sample}/peakMemory2.txt"
+
+rule MP:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "7-MP.fasta",
+        mock        = "{sample}/result_{sample}_6-NA.out"
+    output:
+        fa="{sample}/result_{sample}_7-MP.fa",
+        txt="{sample}/result_{sample}_7-MP.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_7-MP {wildcards.sample}/peakMemory2.txt"
+
+rule NS:
+    input:
+        fw_reads    = path_to_reads + "{sample}/forward.fastqsanger.gz",
+        rev_reads   = path_to_reads + "{sample}/reverse.fastqsanger.gz",
+        ref         = path_to_refs + "8-NS.fasta",
+        mock        = "{sample}/result_{sample}_7-MP.out"
+    output:
+        fa="{sample}/result_{sample}_8-NS.fa",
+        txt="{sample}/result_{sample}_8-NS.out"
+    shell:
+        "bash benchmark_vapor.sh {input.fw_reads} {input.rev_reads} {input.ref} {wildcards.sample}/result_{wildcards.sample}_8-NS {wildcards.sample}/peakMemory2.txt"

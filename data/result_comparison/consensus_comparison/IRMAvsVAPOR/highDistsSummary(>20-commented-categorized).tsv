@@ -1,0 +1,160 @@
+# REMOVE COMMENT FOR PLOTTING
+# segments having a distance above 20, obtained by batchSummarizer.py
+# Manually reviewed all mapping and other result files, the assigned error category is shown in the category column. 
+# in a few cases a comment was added, especially if VAPOR picks the wrong reference, the reference identifier is shown.
+# Category numbers have been restructed for the thesis, the mapping to categories is found in scripts/result_comparison/consensus_comparison/plotScriptsForSummaryTSV/plotHighDistanceHistogram.py
+sample	segment	distance	path	category	comment
+ERR3474634	PA	22	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR3474634/MSA_PA.fa	10	only front and end data
+ERR4552844	PB1	68	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552844/MSA_PB1.fa	12	ambigous reads -> coinfection oder intrahostevolution
+ERR4552887	PB1	234	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552887/MSA_PB1.fa	12	
+ERR4552952	PB1	25	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552952/MSA_PB1.fa	12
+ERR4552955	MP	255	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552955/MSA_MP.fa	8	Bad MP ref! (see folder)
+ERR4552960	PB1	112	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552960/MSA_PB1.fa	12
+ERR4552964	PB1	197	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552964/MSA_PB1.fa	12
+ERR4552966	MP	256	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552966/MSA_MP.fa	8	Same as above
+ERR4552968	PB1	50	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552968/MSA_PB1.fa	12
+ERR4552970	PB1	245	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552970/MSA_PB1.fa	12
+ERR4552976	PA	20	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552976/MSA_PA.fa	12	Middle very lowcoverage(some Ns)
+ERR4552979	PB1	95	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552979/MSA_PB1.fa	12
+ERR4552983	PB1	22	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552983/MSA_PB1.fa	12
+ERR4552987	PA	32	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552987/MSA_PA.fa	12
+ERR4552989	MP	255	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552989/MSA_MP.fa	8
+ERR4552990	MP	311	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552990/MSA_MP.fa	8
+ERR4552992	MP	247	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552992/MSA_MP.fa	8
+ERR4552995	MP	482	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/ERR4552995/MSA_MP.fa	8
+SRR10569280	PB1	41	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR10569280/MSA_PB1.fa	10
+SRR12389595	NS	119	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389595/MSA_NS.fa	13	(studysuggestsonly12bpconservedregions(front&endwastarget))
+SRR12389596	NS	93	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389596/MSA_NS.fa	13	sameasabove
+SRR12389607	NS	111	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389607/MSA_NS.fa	13	sameasabove
+SRR12389607	PA	21	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389607/MSA_PA.fa	8	KY926115.1
+SRR12389608	NS	43	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389608/MSA_NS.fa	13
+SRR12389609	NS	103	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389609/MSA_NS.fa	13
+SRR12389615	NS	103	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389615/MSA_NS.fa	13
+SRR12389616	NS	104	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389616/MSA_NS.fa	13
+SRR12389655	NS	100	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR12389655/MSA_NS.fa	13
+SRR14242224	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR14242224/MSA_MP.fa	8
+SRR14341100	PA	82	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR14341100/MSA_PA.fa	8	95-99%
+SRR14341105	PA	24	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR14341105/MSA_PA.fa	8	EF178516.1
+SRR14341106	PA	47	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR14341106/MSA_PA.fa	8	EF178516.1
+SRR1521178	NA	23	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR1521178/MSA_NA.fa	5	
+SRR15282378	NS	78	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282378/MSA_NS.fa	13
+SRR15282379	NS	90	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282379/MSA_NS.fa	13
+SRR15282393	NS	37	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282393/MSA_NS.fa	13
+SRR15282394	NS	96	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282394/MSA_NS.fa	13
+SRR15282409	NS	94	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282409/MSA_NS.fa	13
+SRR15282611	NS	45	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282611/MSA_NS.fa	13
+SRR15282624	NS	101	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282624/MSA_NS.fa	13
+SRR15282848	NS	114	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282848/MSA_NS.fa	13
+SRR15282849	NS	46	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15282849/MSA_NS.fa	13
+SRR15886374	HA	147	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR15886374/MSA_HA.fa	?
+SRR16232025	NA	75	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR16232025/MSA_NA.fa	8
+SRR16232027	PA	116	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR16232027/MSA_PA.fa	10
+SRR16232028	NA	504	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR16232028/MSA_NA.fa	0
+SRR16232028	PA	1185	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR16232028/MSA_PA.fa	8
+SRR16232030	NA	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR16232030/MSA_NA.fa	10
+SRR16232030	PA	1215	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR16232030/MSA_PA.fa	10
+SRR16232033	PA	79	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR16232033/MSA_PA.fa	4
+SRR18273498	HA	59	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR18273498/MSA_HA.fa	8	M27970.1
+SRR18273507	HA	60	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR18273507/MSA_HA.fa	8	M27970.1
+SRR18273535	NA	669	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR18273535/MSA_NA.fa	8
+SRR18273537	PB2	33	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR18273537/MSA_PB2.fa	8	DQ454102.2
+SRR22690222	PB2	56	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR22690222/MSA_PB2.fa	8
+SRR22690224	PB2	58	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR22690224/MSA_PB2.fa	8
+SRR22690225	PB2	37	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR22690225/MSA_PB2.fa	8
+SRR22690229	PB2	51	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR22690229/MSA_PB2.fa	8
+SRR22690230	PB2	21	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR22690230/MSA_PB2.fa	8
+SRR22690231	PB2	58	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR22690231/MSA_PB2.fa	8
+SRR24839076	MP	26	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839076/MSA_MP.fa	8
+SRR24839077	MP	27	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839077/MSA_MP.fa	8	EU547801.1
+SRR24839080	MP	26	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839080/MSA_MP.fa	8	EU547801.1
+SRR24839084	MP	31	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839084/MSA_MP.fa	8	EU547801.1
+SRR24839092	MP	41	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839092/MSA_MP.fa	8	EU547801.1
+SRR24839093	MP	29	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839093/MSA_MP.fa	8	EU547801.1
+SRR24839098	MP	41	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839098/MSA_MP.fa	8	EU547801.1
+SRR24839113	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839113/MSA_MP.fa	8	EU547801.1
+SRR24839118	MP	27	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839118/MSA_MP.fa	8	EU547801.1
+SRR24839128	PB2	267	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839128/MSA_PB2.fa	8
+SRR24839301	MP	26	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839301/MSA_MP.fa	8
+SRR24839304	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839304/MSA_MP.fa	8
+SRR24839346	MP	25	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839346/MSA_MP.fa	8
+SRR24839347	MP	59	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839347/MSA_MP.fa	8
+SRR24839348	MP	27	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839348/MSA_MP.fa	8
+SRR24839349	MP	24	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839349/MSA_MP.fa	8
+SRR24839732	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839732/MSA_MP.fa	8
+SRR24839741	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839741/MSA_MP.fa	8
+SRR24839742	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839742/MSA_MP.fa	8
+SRR24839743	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839743/MSA_MP.fa	8
+SRR24839746	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839746/MSA_MP.fa	8
+SRR24839754	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839754/MSA_MP.fa	8
+SRR24839755	MP	24	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839755/MSA_MP.fa	8
+SRR24839756	MP	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839756/MSA_MP.fa	8
+SRR24839757	MP	27	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839757/MSA_MP.fa	8
+SRR24839759	MP	27	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839759/MSA_MP.fa	8
+SRR24839760	MP	31	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839760/MSA_MP.fa	8
+SRR24839760	PB2	43	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24839760/MSA_PB2.fa	8
+SRR24842841	MP	48	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24842841/MSA_MP.fa	8
+SRR24842842	MP	26	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24842842/MSA_MP.fa	8
+SRR24842848	PB2	53	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24842848/MSA_PB2.fa	8
+SRR24842907	MP	24	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24842907/MSA_MP.fa	8
+SRR24842911	MP	26	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24842911/MSA_MP.fa	8
+SRR24842922	PB2	53	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24842922/MSA_PB2.fa	8
+SRR24843260	MP	29	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24843260/MSA_MP.fa	8
+SRR24843313	PB2	379	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24843313/MSA_PB2.fa	8
+SRR24843340	PB2	469	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR24843340/MSA_PB2.fa	8
+SRR25222289	NS	102	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR25222289/MSA_NS.fa	5
+SRR25222289	PB2	20	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR25222289/MSA_PB2.fa	10
+SRR25222435	PB2	63	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR25222435/MSA_PB2.fa	10
+SRR25382843	NS	97	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR25382843/MSA_NS.fa	10
+SRR25784139	PB2	28	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR25784139/MSA_PB2.fa	10
+SRR27181099	NA	662	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181099/MSA_NA.fa	8
+SRR27181117	PB2	32	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181117/MSA_PB2.fa	10
+SRR27181338	HA	34	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181338/MSA_HA.fa	8	M27970.1korrektersubtypabererzeugtfalschenScore
+SRR27181522	NA	51	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181522/MSA_NA.fa	4
+SRR27181549	HA	52	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181549/MSA_HA.fa	8
+SRR27181748	NA	662	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181748/MSA_NA.fa	0
+SRR27181757	HA	32	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181757/MSA_HA.fa	8
+SRR27181764	NA	662	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27181764/MSA_NA.fa	0
+SRR27384408	PB1	21	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR27384408/MSA_PB1.fa	10
+SRR28015194	NP	50	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28015194/MSA_NP.fa	10
+SRR28388469	HA	27	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28388469/MSA_HA.fa	10
+SRR28420353	PB2	146	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28420353/MSA_PB2.fa	8	DQ454102.2
+SRR28636332	MP	48	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28636332/MSA_MP.fa	8	EU547801.1
+SRR28834889	PA	47	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28834889/MSA_PA.fa	10
+SRR28995128	PB2	66	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995128/MSA_PB2.fa	8	KT777924.1&CY253889.1
+SRR28995147	HA	21	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995147/MSA_HA.fa	10
+SRR28995150	HA	21	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995150/MSA_HA.fa	8	KX431183.1GQ902801.1JF312053.1JF816565.1
+SRR28995150	PB2	63	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995150/MSA_PB2.fa	8	KT777924.1
+SRR28995152	PB2	64	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995152/MSA_PB2.fa	8	KT777924.1
+SRR28995160	PB2	66	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995160/MSA_PB2.fa	8	KT777924.1
+SRR28995163	PB2	59	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995163/MSA_PB2.fa	8	KT777924.1
+SRR28995164	PB2	61	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995164/MSA_PB2.fa	8	KT777924.1
+SRR28995165	PB2	62	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995165/MSA_PB2.fa	8	KT777924.1
+SRR28995166	PB2	46	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995166/MSA_PB2.fa	8	KT777924.1
+SRR28995171	HA	21	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995171/MSA_HA.fa	8	KX431183.1GQ902801.1JF312053.1JF816565.1
+SRR28995171	PB2	64	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995171/MSA_PB2.fa	8	KT777924.1
+SRR28995172	PB2	64	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995172/MSA_PB2.fa	8	KT777924.1
+SRR28995173	PB2	38	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995173/MSA_PB2.fa	8	KT777924.1
+SRR28995174	PB2	62	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995174/MSA_PB2.fa	8	KT777924.1
+SRR28995175	PB2	66	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR28995175/MSA_PB2.fa	8	KT777924.1
+SRR29009350	PA	32	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR29009350/MSA_PA.fa	4
+SRR29248450	PA	22	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR29248450/MSA_PA.fa	4
+SRR29360537	PA	59	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR29360537/MSA_PA.fa	4
+SRR29478200	PB1	33	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR29478200/MSA_PB1.fa	4
+SRR29487451	PA	33	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR29487451/MSA_PA.fa	4
+SRR30027732	PA	20	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR30027732/MSA_PA.fa	10
+SRR30027733	PB2	73	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR30027733/MSA_PB2.fa	8	DQ454102.2
+SRR3036854	MP	23	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR3036854/MSA_MP.fa	8	EU547801.1
+SRR31121022	PB1	22	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR31121022/MSA_PB1.fa	10
+SRR5125023	PB1	38	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR5125023/MSA_PB1.fa	10
+SRR5215250	NA	24	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR5215250/MSA_NA.fa	8	KF541237.1
+SRR5314799	NP	95	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR5314799/MSA_NP.fa	10
+SRR5314802	NP	95	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR5314802/MSA_NP.fa	10
+SRR5314805	NP	30	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR5314805/MSA_NP.fa	10
+SRR5314806	NP	26	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR5314806/MSA_NP.fa	10
+SRR6470213	PB2	31	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR6470213/MSA_PB2.fa	4
+SRR6488522	HA	20	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR6488522/MSA_HA.fa	8	KT777860.1
+SRR7598294	NA	64	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR7598294/MSA_NA.fa	10
+SRR7598294	PB1	24	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR7598294/MSA_PB1.fa	10
+SRR7598294	PB2	20	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR7598294/MSA_PB2.fa	8	KT777924.1
+SRR7598295	NS	20	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR7598295/MSA_NS.fa	10
+SRR7598298	NA	42	/home/galaxy/akolbecher/workdir/quality_comparison/consensus_comparisom/compare_irma_vapor/SRR7598298/MSA_NA.fa	10
