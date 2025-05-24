@@ -41,7 +41,7 @@ df = pd.read_csv(file_path, sep='\t')
 
 print(df.head()) 
 
-""" all 3
+# all 3
 category_counts = {
     '-1': (df['Distance'] == -1).sum(),
     '0': (df['Distance'] == 0).sum(),
@@ -52,9 +52,10 @@ print(category_counts)
 labels = ['Only VAPOR built segment', 'Built segments match', 'Built segments have pos. distance']
 sizes = [category_counts['-1']-906, category_counts['0'], category_counts['positive']] #sizes for vaporBugRerun
 colors = ['#ff9999','#66b3ff','#99ff99']  
-""" 
+
 
 #only 2
+"""
 category_counts = {
     '0': (df['Distance'] == 0).sum(),
     'positive': (df['Distance'] > 0).sum()
@@ -64,6 +65,7 @@ print(category_counts)
 labels = ['Built segments match', 'Built segments have pos. distance']
 sizes = [category_counts['0'], category_counts['positive']] #sizes for vaporBugRerun
 colors = ['#66b3ff','#99ff99']  
+"""
 
 # pie chart
 fig, ax = plt.subplots(figsize=(7, 7))
